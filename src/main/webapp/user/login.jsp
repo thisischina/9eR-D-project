@@ -1,21 +1,22 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%
-    pageContext.setAttribute("relativepath",request.getContextPath());
+    pageContext.setAttribute("path",request.getContextPath());
 %>
 
-<html>
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="<%=basePath%>">
+
     <title>换班系统</title>
-    <meta name="keywords" content="index">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="renderer" content="webkit">
-    <link rel="stylesheet" href="../static/css/login/amazeui.min.css" />
-    <link rel="stylesheet" href="../static/css/login/admin.css">
-    <link rel="stylesheet" href="../static/css/login/app.css">
+    <jsp:include page="main/cite_css.jsp"></jsp:include>
 </head>
 <body data-type="login">
 <div class="am-g myapp-login">
@@ -38,7 +39,7 @@
                     <div class="am-form-group">
                         <input type="password" class="" id="doc-ipt-pwd-1" placeholder="输入密码" value="******">
                     </div>
-                    <p><button type="submit" class="am-btn am-btn-default"><a href="${relativepath}/WEB-INF/index.jsp">登录</a></button></p>
+                    <p><button type="submit" class="am-btn am-btn-default"><a href="index.jsp">登录</a></button></p>
                 </fieldset>
             </form>
         </div>

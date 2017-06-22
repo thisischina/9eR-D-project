@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    pageContext.setAttribute("relativepath",request.getContextPath());
+    pageContext.setAttribute("path",request.getContextPath());
 %>
+
 <!DOCTYPE html>
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -11,11 +12,11 @@
 <!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
 <!-- BEGIN HEAD -->
-
 <head>
+
     <title>换班系统</title>
 
-    <jsp:include page="${relativepath}/WEB-INF/main/cite_css.jsp"></jsp:include>
+    <jsp:include page="${path}/main/cite_css.jsp"></jsp:include>
 
 </head>
 
@@ -31,7 +32,7 @@
 
     <!-- BEGIN TOP NAVIGATION BAR -->
 
-    <jsp:include page="${relativepath}/WEB-INF/main/top.jsp"></jsp:include>
+    <jsp:include page="${path}/main/top.jsp"></jsp:include>
 
     <!-- END TOP NAVIGATION BAR -->
 
@@ -45,7 +46,7 @@
 
     <!-- BEGIN SIDEBAR -->
 
-    <jsp:include page="${relativepath}/WEB-INF/main/left.jsp"></jsp:include>
+    <jsp:include page="${path}/main/left.jsp"></jsp:include>
 
     <!-- END SIDEBAR -->
 
@@ -445,7 +446,7 @@
 
 <!-- BEGIN CORE PLUGINS -->
 
-<jsp:include page="${relativepath}/WEB-INF/main/cite_js.jsp"></jsp:include>
+<jsp:include page="${path}/main/cite_js.jsp"></jsp:include>
 
 <!-- END CORE PLUGINS -->
 

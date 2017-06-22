@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-    <%
-    pageContext.setAttribute("relativepath",request.getContextPath());
+<%
+    pageContext.setAttribute("path",request.getContextPath());
 %>
+
 <!DOCTYPE html>
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -11,11 +12,11 @@
 <!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
 <!-- BEGIN HEAD -->
-
 <head>
+
     <title>换班系统</title>
 
-    <jsp:include page="${relativepath}/WEB-INF/main/cite_css.jsp"></jsp:include>
+    <jsp:include page="${path}/main/cite_css.jsp"></jsp:include>
 
 </head>
 
@@ -31,7 +32,7 @@
 
     <!-- BEGIN TOP NAVIGATION BAR -->
 
-    <jsp:include page="${relativepath}/WEB-INF/main/top.jsp"></jsp:include>
+    <jsp:include page="${path}/main/top.jsp"></jsp:include>
 
     <!-- END TOP NAVIGATION BAR -->
 
@@ -45,7 +46,7 @@
 
     <!-- BEGIN SIDEBAR -->
 
-    <jsp:include page="${relativepath}/WEB-INF/main/left.jsp"></jsp:include>
+    <jsp:include page="${path}/main/left.jsp"></jsp:include>
 
     <!-- END SIDEBAR -->
 
@@ -229,7 +230,7 @@
 
                             <div class="actions">
 
-                                <a href="${relativepath}/user/user_add.jsp" class="btn focus"><i class="icon-plus"></i> 添加</a>
+                                <a href="user/user_add.jsp" class="btn focus"><i class="icon-plus"></i> 添加</a>
 
                                 <a href="#" class="btn active"><i class="icon-print"></i> 打印</a>
 
@@ -273,11 +274,11 @@
 
                                     <td>船长</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">孙前进</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">孙前进</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">孙东升</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">孙东升</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -291,11 +292,11 @@
 
                                     <td>大副/HSE</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">严剑峰</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">严剑峰</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -309,11 +310,11 @@
 
                                     <td>二副</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">靳宝存</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">靳宝存</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -327,11 +328,11 @@
 
                                     <td>水手长</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">高卫新</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">高卫新</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
                                 </tr>
@@ -344,11 +345,11 @@
 
                                     <td>水手</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">张辉</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">张辉</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -362,11 +363,11 @@
 
                                     <td>水手</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">王勇</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">王勇</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -380,11 +381,11 @@
 
                                     <td>二水</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">黄正忠</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">黄正忠</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">程思奇</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">程思奇</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
                                 </tr>
@@ -397,11 +398,11 @@
 
                                     <td>大厨</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">陶晓平</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">陶晓平</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -415,11 +416,11 @@
 
                                     <td>二厨</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">田朝红</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">田朝红</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -433,11 +434,11 @@
 
                                     <td>服务员</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">袁德超</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">袁德超</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -451,11 +452,11 @@
 
                                     <td>轮机长</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">张斯晨</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">张斯晨</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -469,11 +470,11 @@
 
                                     <td>轮机长</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">郑海荣</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">郑海荣</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -487,11 +488,11 @@
 
                                     <td>二管轮</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">蒋吉</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">蒋吉</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -505,11 +506,11 @@
 
                                     <td>二管轮</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">兰云飞</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">兰云飞</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -523,11 +524,11 @@
 
                                     <td>机匠长</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">刘胜刚</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">刘胜刚</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -541,11 +542,11 @@
 
                                     <td>机工</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">张晓帅</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">张晓帅</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -559,11 +560,11 @@
 
                                     <td>机工</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">赵革委</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">赵革委</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -577,11 +578,11 @@
 
                                     <td>机工</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">王玺</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">王玺</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">赵小虎</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">赵小虎</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -595,11 +596,11 @@
 
                                     <td>电机员/电工</td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp">施银武</a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp">施银武</a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
-                                    <td class="hidden-480"><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td class="hidden-480"><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -628,7 +629,7 @@
 
                             <div class="actions">
 
-                                <a href="${relativepath}/user/user_add.jsp" class="btn focus"><i class="icon-plus"></i> 添加</a>
+                                <a href="user/user_add.jsp" class="btn focus"><i class="icon-plus"></i> 添加</a>
 
                                 <a href="#" class="btn active"><i class="icon-print"></i> 打印</a>
 
@@ -671,11 +672,11 @@
 
                                     <td>经理</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">王俊海</a></td>
+                                    <td><a href="user/user_info.jsp">王俊海</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -689,11 +690,11 @@
 
                                     <td>仪器组长</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">卢玉生</a></td>
+                                    <td><a href="user/user_info.jsp">卢玉生</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">郭辉</a></td>
+                                    <td><a href="user/user_info.jsp">郭辉</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -707,11 +708,11 @@
 
                                     <td>仪器领班</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">陈炳超</a></td>
+                                    <td><a href="user/user_info.jsp">陈炳超</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">徐征驰</a></td>
+                                    <td><a href="user/user_info.jsp">徐征驰</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -725,11 +726,11 @@
 
                                     <td>仪器操作员</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">卢世杰</a></td>
+                                    <td><a href="user/user_info.jsp">卢世杰</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -743,11 +744,11 @@
 
                                     <td>仪器操作员</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">代功军</a></td>
+                                    <td><a href="user/user_info.jsp">代功军</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">景书党</a></td>
+                                    <td><a href="user/user_info.jsp">景书党</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -761,11 +762,11 @@
 
                                     <td>资料处理</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">余锦</a></td>
+                                    <td><a href="user/user_info.jsp">余锦</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">高磊</a></td>
+                                    <td><a href="user/user_info.jsp">高磊</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -779,11 +780,11 @@
 
                                     <td>定位组长</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">尼木次仁</a></td>
+                                    <td><a href="user/user_info.jsp">尼木次仁</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -797,11 +798,11 @@
 
                                     <td>定位领班</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">沈建余</a></td>
+                                    <td><a href="user/user_info.jsp">沈建余</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">陈辰</a></td>
+                                    <td><a href="user/user_info.jsp">陈辰</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -815,11 +816,11 @@
 
                                     <td>定位操作员</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">刘春雷</a></td>
+                                    <td><a href="user/user_info.jsp">刘春雷</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">叶川</a></td>
+                                    <td><a href="user/user_info.jsp">叶川</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -833,11 +834,11 @@
 
                                     <td>定位操作员</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">叶舟航</a></td>
+                                    <td><a href="user/user_info.jsp">叶舟航</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -851,11 +852,11 @@
 
                                     <td>震源组长</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">杨震华</a></td>
+                                    <td><a href="user/user_info.jsp">杨震华</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -869,11 +870,11 @@
 
                                     <td>震源领班</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">王广宏</a></td>
+                                    <td><a href="user/user_info.jsp">王广宏</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -887,11 +888,11 @@
 
                                     <td>震源领班</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">孙传明</a></td>
+                                    <td><a href="user/user_info.jsp">孙传明</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">白元杰</a></td>
+                                    <td><a href="user/user_info.jsp">白元杰</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -905,11 +906,11 @@
 
                                     <td>震源工</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">周国成</a></td>
+                                    <td><a href="user/user_info.jsp">周国成</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -923,11 +924,11 @@
 
                                     <td>震源工</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">董田宽</a></td>
+                                    <td><a href="user/user_info.jsp">董田宽</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">徐苏东</a></td>
+                                    <td><a href="user/user_info.jsp">徐苏东</a></td>
 
                                     <td><span class="label label-success">在职</span></td>
 
@@ -941,11 +942,11 @@
 
                                     <td>见习气爆</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-danger">空缺</span></td>
 
@@ -959,11 +960,11 @@
 
                                     <td>见习</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">朱伟林</a></td>
+                                    <td><a href="user/user_info.jsp">朱伟林</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-warning">在职</span></td>
 
@@ -977,11 +978,11 @@
 
                                     <td>见习</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">曹乐</a></td>
+                                    <td><a href="user/user_info.jsp">曹乐</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-warning">在职</span></td>
 
@@ -995,11 +996,11 @@
 
                                     <td>见习</td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp">程健桐</a></td>
+                                    <td><a href="user/user_info.jsp">程健桐</a></td>
 
-                                    <td><a href="${relativepath}/user/user_info.jsp"></a></td>
+                                    <td><a href="user/user_info.jsp"></a></td>
 
                                     <td><span class="label label-warning">在职</span></td>
 
@@ -1060,7 +1061,7 @@
 
 <!-- BEGIN CORE PLUGINS -->
 
-<jsp:include page="${relativepath}/WEB-INF/main/cite_js.jsp"></jsp:include>
+<jsp:include page="${path}/main/cite_js.jsp"></jsp:include>
 
 <script>
 

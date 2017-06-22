@@ -3,7 +3,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    pageContext.setAttribute("relativepath",request.getContextPath());
+    pageContext.setAttribute("path",request.getContextPath());
 %>
 
 <div class="page-sidebar nav-collapse collapse">
@@ -46,7 +46,7 @@
 
         <li class="start active ">
 
-            <a href="${relativepath}/index.jsp">
+            <a href="${path}/toindex">
 
                 <i class="icon-home"></i>
 
@@ -60,7 +60,7 @@
 
         <li class="">
 
-            <a href="${relativepath}/user/user_info.jsp">
+            <a href="${path}/user/user_info">
 
                 <i class="icon-home"></i>
 
@@ -87,19 +87,19 @@
             <%--<ul class="sub-menu">--%>
                 <%--<li class="active">--%>
 
-                    <%--<a href="${relativepath}/user/user_list.jsp">--%>
+                    <%--<a href="${path}/user/user_list.jsp">--%>
                         <%--船员名单--%>
                     <%--</a>--%>
                 <%--</li>--%>
 
                 <%--<li>--%>
-                    <%--<a href="${relativepath}/others/invitation_list.jsp">--%>
+                    <%--<a href="${path}/others/invitation_list.jsp">--%>
                         <%--邀请函名单--%>
                     <%--</a>--%>
                 <%--</li>--%>
 
                 <%--<li>--%>
-                    <%--<a href="${relativepath}/others/certificate_list.jsp">--%>
+                    <%--<a href="${path}/others/certificate_list.jsp">--%>
                         <%--证书信息表--%>
                     <%--</a>--%>
                 <%--</li>--%>
@@ -122,7 +122,7 @@
 
                 <%--<li>--%>
 
-                    <%--<a href="${relativepath}/others/changework.jsp">--%>
+                    <%--<a href="${path}/others/changework.jsp">--%>
 
                         <%--设置换班</a>--%>
 

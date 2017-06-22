@@ -1,7 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    pageContext.setAttribute("relativepath",request.getContextPath());
+    pageContext.setAttribute("path",request.getContextPath());
 %>
+
 <!DOCTYPE html>
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -11,11 +12,11 @@
 <!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
 <!-- BEGIN HEAD -->
-
 <head>
+
     <title>换班系统</title>
 
-    <jsp:include page="${relativepath}/WEB-INF/main/cite_css.jsp"></jsp:include>
+    <jsp:include page="${path}/main/cite_css.jsp"></jsp:include>
 
 </head>
 
@@ -31,7 +32,7 @@
 
     <!-- BEGIN TOP NAVIGATION BAR -->
 
-    <jsp:include page="${relativepath}/WEB-INF/main/top.jsp"></jsp:include>
+    <jsp:include page="${path}/main/top.jsp"></jsp:include>
 
     <!-- END TOP NAVIGATION BAR -->
 
@@ -45,7 +46,7 @@
 
     <!-- BEGIN SIDEBAR -->
 
-    <jsp:include page="${relativepath}/WEB-INF/main/left.jsp"></jsp:include>
+    <jsp:include page="${path}/main/left.jsp"></jsp:include>
 
     <!-- END SIDEBAR -->
 
@@ -251,7 +252,7 @@
 
                             <div class="tab-pane profile-classic row-fluid" id="tab_1_2">
 
-                                <div class="span2"><img src="media/image/user/user1.png" alt="" /></div>
+                                <div class="span2"><img src="${path}/media/image/user/user1.png" alt="" /></div>
 
                                 <ul class="unstyled span10">
 
@@ -338,7 +339,7 @@
 
                                                 <div id="tab_1-1" class="tab-pane active">
 
-                                                    <div style="height: auto;" id="accordion1-1" class="accordion collapse">
+                                                    <div style="height: auto;" class="accordion collapse">
 
                                                         <form action="#">
 
@@ -366,7 +367,7 @@
 
                                                             <div class="controls">
 
-                                                                <input type="text" class="span8 m-wrap" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;US&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" />
+                                                                <input type="text" class="span8 m-wrap" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;US&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;${path}/maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" />
 
                                                                 <p class="help-block"><span class="muted">开始键入自动完成!. E.g: US</span></p>
 
@@ -440,7 +441,7 @@
 
                                                 <div id="tab_3-3" class="tab-pane">
 
-                                                    <div style="height: auto;" id="accordion3-3" class="accordion collapse">
+                                                    <div style="height: auto;" class="accordion collapse">
 
                                                         <form action="#">
 
@@ -470,20 +471,19 @@
 
                                                 </div>
 
-                                                <form>
                                                 <div id="tab_3-4" class="tab-pane">
 
-                                                    <div style="height: auto;" id="accordion3-4" class="accordion collapse">
+                                                    <div style="height: auto;" class="accordion collapse">
 
-                                                        <form action="#">
+                                                        <form>
 
                                                             <label class="control-label">账号名称</label>
 
-                                                            <input type="password" class="m-wrap span8" />
+                                                            <input type="text" id="account" name="account" class="m-wrap span8" />
 
                                                             <label class="control-label">账号密码</label>
 
-                                                            <input type="password" class="m-wrap span8" />
+                                                            <input type="password" id="password" name="password" class="m-wrap span8" />
 
                                                             <label class="control-label">确认密码</label>
 
@@ -491,9 +491,9 @@
 
                                                             <div class="submit-btn">
 
-                                                                <a href="#" class="btn green">确认修改</a>
+                                                                <button class="btn green" type="button" onclick="add_admin()">确认添加</button>
 
-                                                                <a href="#" class="btn">取消</a>
+                                                                <button class="btn grey" type="reset">重置</button>
 
                                                             </div>
 
@@ -502,7 +502,6 @@
                                                     </div>
 
                                                 </div>
-                                                </form>
                                             </div>
 
                                         </div>
@@ -546,13 +545,13 @@
 
 <!-- BEGIN FOOTER -->
 
-<jsp:include page="${relativepath}/main/bottom.jsp"></jsp:include>
+<jsp:include page="${path}/main/bottom.jsp"></jsp:include>
 
 <!-- END FOOTER -->
 
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 
-<jsp:include page="${relativepath}/main/cite_js.jsp"></jsp:include>
+<jsp:include page="${path}/main/cite_js.jsp"></jsp:include>
 
 <script>
 
@@ -573,3 +572,26 @@
 <!-- END BODY -->
 
 </html>
+<script src=""></script>
+<script>
+    function add_admin() {
+        var account=$("#account").val();
+        var password=$("#password").val();
+        alert(account+password)
+        jQuery.ajax({
+            url: "${path}/add_admin",
+            type: "Post",
+            dataType: "json",
+            contentType : "application/x-www-form-urlencoded;charset=utf-8",
+            data: ({"account":account,
+                    "password":password
+            }),
+            success: function (data) {
+                alert(data.d);
+            },
+            error: function (data) {
+               window.location.href="${path}/to404";
+            }
+        });
+    }
+</script>

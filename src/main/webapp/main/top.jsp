@@ -3,7 +3,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    pageContext.setAttribute("relativepath",request.getContextPath());
+    pageContext.setAttribute("path",request.getContextPath());
 %>
 
 <div class="navbar-inner">
@@ -14,7 +14,7 @@
 
         <a class="brand" href="javascript:">
 
-            <img src="${relativepath}/static/image/company-9einfo.png" alt="logo"/>
+            <%--<img src="${path}/static/image/company-9einfo.png" alt="logo"/>--%>
 
         </a>
 
@@ -24,7 +24,7 @@
 
         <a href="javascript:" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
 
-            <img src="${relativepath}/static/image/menu-toggler.png" alt="" />
+            <img src="${path}/static/image/menu-toggler.png" alt="" />
 
         </a>
 
@@ -36,76 +36,39 @@
             <ul class="nav navbar-nav">
                 <!-- DOC: Remove data-hover="megadropdown" and data-close-others="true" attributes below to disable the horizontal opening on mouse hover -->
                 <li class="classic-menu-dropdown active">
-                    <a href="#">
-                        Dashboard <span class="selected">
+                    <a href="${path}/one/toindex">
+                        系统管理 <span class="selected">
 					</span>
                     </a>
                 </li>
+
                 <li class="classic-menu-dropdown">
-                    <a data-toggle="dropdown" href="javascript:;">
-                        Classic <i class="fa fa-angle-down"></i>
+                    <a data-toggle="dropdown" href="javascript:">
+                        CMS系统 <i class="fa fa-angle-down"></i>
                     </a>
-                    <ul class="dropdown-menu pull-left">
-                        <li>
-                            <a href="javascript:;">
-                                <i class="fa fa-bookmark-o"></i> Section 1 </a>
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a href="javascript:;">
-                                <i class="fa fa-envelope-o"></i> More options </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="javascript:;">
-                                        Second level link </a>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:;">
-                                        More options </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="index.html">
-                                                Third level link </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html">
-                                                Third level link </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html">
-                                                Third level link </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html">
-                                                Third level link </a>
-                                        </li>
-                                        <li>
-                                            <a href="index.html">
-                                                Third level link </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="index.html">
-                                        Second level link </a>
-                                </li>
-                                <li>
-                                    <a href="index.html">
-                                        Second level link </a>
-                                </li>
-                                <li>
-                                    <a href="index.html">
-                                        Second level link </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                </li>
+
+                <li class="classic-menu-dropdown">
+                    <a data-toggle="dropdown" href="javascript:">
+                        模块管理 <i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+
+                <li class="classic-menu-dropdown">
+                    <a data-toggle="dropdown" href="javascript:">
+                        统计分析 <i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+
+                <li class="classic-menu-dropdown">
+                    <a data-toggle="dropdown" href="javascript:">
+                        消息公告 <i class="fa fa-angle-down"></i>
+                    </a>
                 </li>
             </ul>
         </div>
 
         <ul class="nav pull-right">
-
-
             <!-- BEGIN INBOX DROPDOWN -->
 
             <li class="dropdown" id="header_inbox_bar">
@@ -130,7 +93,7 @@
 
                         <a href="page_404.html">
 
-                            <span class="photo"><img src="${relativepath}/static/image/avatar2.jpg" alt="" /></span>
+                            <span class="photo"><img src="${path}/static/image/avatar2.jpg" alt="" /></span>
 
                             <span class="subject">
 
@@ -170,7 +133,7 @@
 
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
-                    <img alt="" src="${relativepath}/static/image/avatar1_small.jpg" />
+                    <img alt="" src="${path}/static/image/avatar1_small.jpg" />
 
                     <span class="username">管理员</span>
 

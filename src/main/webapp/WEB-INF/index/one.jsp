@@ -69,28 +69,33 @@
                     </li>
 
                     <li class="classic-menu-dropdown">
-                        <a data-toggle="dropdown" href="${path}/two/toindex">
-                            CMS系统 <i class="fa fa-angle-down"></i>
+                        <a href="${path}/two/toindex">
+                            CMS系统 <span class="selected">
+					</span>
                         </a>
                     </li>
 
                     <li class="classic-menu-dropdown">
-                        <a data-toggle="dropdown" href="${path}/three/toindex">
-                            模块管理 <i class="fa fa-angle-down"></i>
+                        <a href="${path}/three/toindex">
+                            模块管理 <span class="selected">
+					</span>
                         </a>
                     </li>
 
                     <li class="classic-menu-dropdown">
-                        <a data-toggle="dropdown" href="${path}/four/toindex">
-                            统计分析 <i class="fa fa-angle-down"></i>
+                        <a href="${path}/four/toindex">
+                            统计分析 <span class="selected">
+					</span>
                         </a>
                     </li>
 
                     <li class="classic-menu-dropdown">
-                        <a data-toggle="dropdown" href="${path}/five/toindex">
-                            消息公告 <i class="fa fa-angle-down"></i>
+                        <a href="${path}/five/toindex">
+                            消息公告 <span class="selected">
+					</span>
                         </a>
                     </li>
+
                 </ul>
             </div>
 
@@ -171,7 +176,7 @@
 
                         <li><a href="#"><i class="icon-lock"></i> 我的信息</a></li>
 
-                        <li><a href="login.html"><i class="icon-key"></i> 退出</a></li>
+                        <li><a href="${path}/login.jsp"><i class="icon-key"></i> 退出</a></li>
 
                     </ul>
 
@@ -195,7 +200,6 @@
 
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
-
     <!-- BEGIN SIDEBAR -->
 
     <jsp:include page="${path}/left/one.jsp"></jsp:include>
@@ -2055,8 +2059,3 @@
 <!-- END BODY -->
 
 </html>
-<script>
-    function setleft() {
-        $("#left_one").css("display","none");
-    }
-</script>
