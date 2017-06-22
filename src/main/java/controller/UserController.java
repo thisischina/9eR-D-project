@@ -22,13 +22,13 @@ public class UserController {
 	@Resource
 	private IUserService userService;
 
-	@RequestMapping("to404")
+	@RequestMapping("/to404")
 	public String toNotfound(HttpServletRequest request, HttpServletResponse response, Model model) {
 		System.out.println("++++++" + request.getContextPath());
 		return "others/page_404";
 	}
 
-	@RequestMapping("toindex")
+	@RequestMapping("/toindex")
 	public String toIndex(HttpServletRequest request, HttpServletResponse response, Model model) {
 		System.out.println("++++++" + request.getContextPath());
 		return "/index";

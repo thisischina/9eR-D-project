@@ -40,7 +40,7 @@
             <span> login</span> ● <i>登陆 </i>
         </div>
         <div class="am-u-sm-10 login-am-center">
-            <form class="am-form" action="${path}/toindex" method="post">
+            <form class="am-form" action="${path}/user/toindex" method="post">
                 <fieldset>
                     <div class="am-form-group">
                         <input type="text" class="" id="doc-ipt-email-1" placeholder="输入账户名" value="admin">
